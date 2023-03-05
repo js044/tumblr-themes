@@ -24,7 +24,6 @@
 	<meta name="image:Header Image" content=""/>
 
 	<meta name="if:Show title" content="1" />
-	<meta name="if:Full Background" content="1" />
 	<meta name="if:Circle Icon" content="1" />
 	<meta name="if:Blockquote" content="1" />
 	<meta name="if:Underline links" content="1" />
@@ -65,10 +64,7 @@
 	font: .88em {Font:Body}; 
 	color: {color:Text}; 
 	background-color: {color:Background}; 
-	background-image: url('{image:Background Image}');
-	{block:IfFullBackground} 
-        background-size: cover;
-        {/block:IfFullBackground} }
+	background-image: url('{image:Background Image}');}
 		
 	a { 
 	color: {color:Link}; }
