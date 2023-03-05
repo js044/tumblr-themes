@@ -1,11 +1,10 @@
-<!-- pudding: a plain times theme edit by negg.tumblr.com -->
+	<!-- pudding: a plain times theme edit by negg.tumblr.com -->
 
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-    <html xmlns="http://www.w3.org/1999/xhtml">
-
-    <head profile="http://gmpg.org/xfn/11">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=550">
+ 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head profile="http://gmpg.org/xfn/11">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=550">
 	
 	<meta name="color:Background" content="#ffffff" />
 	<meta name="color:Text" content="#000000" />
@@ -46,194 +45,183 @@
 
 	<style type="text/css">
 
-    /* base elements */
-		html, body, h1, h2, h3, h4, h5, h6, p, ol { 
-		margin:0; 
-		padding:0; }
+	/* base elements */
+	html, body, h1, h2, h3, h4, h5, h6, p, ol { 
+	margin:0; 
+	padding:0; }
 		
-		blockquote{
-	    {block:IfNotBlockquote} 
+	blockquote{
+	{block:IfNotBlockquote} 
         margin:0 0 10px 0px; 
         padding:0;
-        {/block:IfNotBlockquote} 
-		    
-	    {block:IfBlockquote} 
+        {/block:IfNotBlockquote} 	    
+	{block:IfBlockquote} 
         margin:0 0 10px 10px; 
         padding:0 0 0 10px;
         border-left:solid 1px {color:Text};
-        {/block:IfBlockquote} 
-		}
+        {/block:IfBlockquote} }
     		
-		body { 
-		font: .88em {Font:Body}; 
-		color: {color:Text}; 
-		background-color: {color:Background}; 
-		background-image: url('{image:Background Image}');
-		{block:IfFullBackground} 
+	body { 
+	font: .88em {Font:Body}; 
+	color: {color:Text}; 
+	background-color: {color:Background}; 
+	background-image: url('{image:Background Image}');
+	{block:IfFullBackground} 
         background-size: cover;
-        {/block:IfFullBackground}
-		}
+        {/block:IfFullBackground} }
 		
-		a { 
-		color: {color:Link}; }
+	a { 
+	color: {color:Link}; }
 	   	
     	a:hover { color: {color:Link Hover}; }
-		{block:IfUnderlineLinks} a { text-decoration: underline; } 
-		{/block:IfUnderlineLinks}
-		{block:IfNotUnderlineLinks} a { text-decoration:none; } 
-		{/block:IfNotUnderlineLinks}
+	{block:IfUnderlineLinks} a { text-decoration: underline; } 
+	{/block:IfUnderlineLinks}
+	{block:IfNotUnderlineLinks} a { text-decoration:none; } 
+	{/block:IfNotUnderlineLinks}
         
-		#container {
-		width: 500px; 
-		{block:IfNotLeftAlignEverything} margin: 0 auto; 
-		{/block:IfNotLeftAlignEverything} margin-top: 25px; margin-bottom: 25px; 
-		{block:IfLeftAlignEverything} margin-left: 25px; 
-		{/block:IfLeftAlignEverything} }
+	#container {
+	width: 500px; 
+	{block:IfNotLeftAlignEverything} margin: 0 auto; 
+	{/block:IfNotLeftAlignEverything} margin-top: 25px; margin-bottom: 25px; 
+	{block:IfLeftAlignEverything} margin-left: 25px; 
+	{/block:IfLeftAlignEverything} }
     
-    
-    /* header */
-
-		#top { 
-		margin-bottom: 15px; 
-		{block:IfNotLeftAlignEverything} text-align: center; 
-		{/block:IfNotLeftAlignEverything} }
+	/* header */
+	#top { 
+	margin-bottom: 15px; 
+	{block:IfNotLeftAlignEverything} text-align: center; 
+	{/block:IfNotLeftAlignEverything} }
 		 
-	    #top img {
+	#top img {
         max-height: 220px;
-	   {block:IfCircleIcon} border-radius:50%; {/block:IfCircleIcon} 
-	    }
+	{block:IfCircleIcon} border-radius:50%; {/block:IfCircleIcon} }
 		 
-		#top h1 a { color: {color:Link}; text-decoration: none; }
-		#top h1 a:hover { color: {color:Link Hover}; text-decoration: none; }
-		.arch-rss-links { margin-top: 10px; }
+	#top h1 a { color: {color:Link}; text-decoration: none; }
+	#top h1 a:hover { color: {color:Link Hover}; text-decoration: none; }
+	.arch-rss-links { margin-top: 10px; }
 		
-	    .links {
+	.links {
         margin-top: 10px; }
 
 	/* posts */
-		.post { 
-		line-height: 1.5em; 
-		margin-bottom: 20px; 
-		padding-bottom: 25px; 
-		clear: both; }
-		.post h3 { font-size: 1em; }
-		.post p { padding-bottom: 10px; }
-		.caption blockquote { padding-left: 20px; }
+	.post { 
+	line-height: 1.5em; 
+	margin-bottom: 20px; 
+	padding-bottom: 25px; 
+	clear: both; }
+	.post h3 { font-size: 1em; }
+	.post p { padding-bottom: 10px; }
+	.caption blockquote { padding-left: 20px; }
 		
     	{block:IfCenterPermalink}
         .permalink {
         text-align: center; }
         {/block:IfCenterPermalink}
-
+		
         .permalink img{
-        max-width: 60px;
-        }
+        max-width: 60px;  }
 
 	/* text posts */
-		.text-post { 
+	.text-post { 
         {block:IfNotCenterPosts} text-align: justify; {/block:IfNotCenterPosts}
-        {block:IfCenterPosts} text-align: center; {/block:IfCenterPosts}
-        }
+        {block:IfCenterPosts} text-align: center; {/block:IfCenterPosts}  }
         .text-post img {  max-width: 100%;  }
 
-    /* photo posts */
-		.photo-post { margin-bottom: 5px; {block:IfNotCenterPhotos} text-align: justify; {/block:IfNotCenterPhotos} 
-		{block:IfCenterPhotos} text-align: center; {/block:IfCenterPhotos} }
-		.photo-post img { border: 0; }
+	/* photo posts */
+	.photo-post { margin-bottom: 5px; {block:IfNotCenterPhotos} text-align: justify; {/block:IfNotCenterPhotos} 
+	{block:IfCenterPhotos} text-align: center; {/block:IfCenterPhotos} }
+	.photo-post img { border: 0; }
 
-   /* quote posts */
-		.quote-post { 
-		 {block:IfNotCenterQuotes} text-align: justify; {/block:IfNotCenterQuotes} 
-		 {block:IfCenterQuotes} text-align: center; {/block:IfCenterQuotes} }
-		{block:IfItalicizeQuotes}
-		.quote-post q { font-style: italic; }
-		.quote-post i { font-style: normal; }
-		{/block:IfItalicizeQuotes}
-		.quote-post .source { 
-	   	font-size: .82em; }
+	/* quote posts */
+	.quote-post { 
+	{block:IfNotCenterQuotes} text-align: justify; {/block:IfNotCenterQuotes} 
+	{block:IfCenterQuotes} text-align: center; {/block:IfCenterQuotes} }
+	{block:IfItalicizeQuotes}
+	.quote-post q { font-style: italic; }
+	.quote-post i { font-style: normal; }
+	{/block:IfItalicizeQuotes}
+	.quote-post .source { 
+	font-size: .82em; }
 		
 	/* link posts */	
-		.link-post { 
-		 {block:IfNotCenterLinks} text-align: justify; 
-		 {/block:IfNotCenterLinks} {block:IfCenterLinks} text-align: center;
-		 {/block:IfCenterLinks} 
-		}
+	.link-post { 
+	{block:IfNotCenterLinks} text-align: justify; 
+	{/block:IfNotCenterLinks} {block:IfCenterLinks} text-align: center;
+	{/block:IfCenterLinks} 	}
 		
 	/* chat posts */	
-		.chat-post { 
-		    {block:IfNotCenterChats} 
-		    text-align: center; 
-		    {/block:IfNotCenterChats} 
-		{block:IfCenterChats} 
-		text-align: center; {/block:IfCenterChats} }
-		.chat-post ul, .chat-post li { margin: 0; padding: 0; }
-		.chat li { list-style-type: none; }
-		li span.user_1 { font-weight: bold; color: {color:Chat name one}; }
-		li span.user_2 { font-weight: bold; color: {color:Chat name two}; }
+	.chat-post { 
+	{block:IfNotCenterChats} 
+	text-align: center; 
+	{/block:IfNotCenterChats} 
+	{block:IfCenterChats} 
+	text-align: center; {/block:IfCenterChats} }
+	.chat-post ul, .chat-post li { margin: 0; padding: 0; }
+	.chat li { list-style-type: none; }
+	li span.user_1 { font-weight: bold; color: {color:Chat name one}; }
+	li span.user_2 { font-weight: bold; color: {color:Chat name two}; }
         
-        
-    /* audio posts */
+        /* audio posts */
         .audio-post { 
         {block:IfNotCenterAudioPosts} text-align: justify; {/block:IfNotCenterAudioPosts}
         {block:IfCenterAudioPosts} text-align: center; {/block:IfCenterAudioPosts} }
         
-     /* video posts */
-        .video-post { {block:IfNotCenterVideoPosts} text-align: justify; {/block:IfNotCenterVideoPosts} {block:IfCenterVideoPosts} text-align: center; {/block:IfCenterVideoPosts} }
+	/* video posts */
+	.video-post { {block:IfNotCenterVideoPosts} text-align: justify; {/block:IfNotCenterVideoPosts} {block:IfCenterVideoPosts} text-align: center; {/block:IfCenterVideoPosts} }
         
-    /* qa posts */
+	/* qa posts */
         .answer-post { {block:IfNotCenterAnswerPosts} text-align: justify; {/block:IfNotCenterAnswerPosts} {block:IfCenterAnswerPosts} text-align: center; {/block:IfCenterAnswerPosts} }
-		.question { margin-bottom: 10px; }
-		.answered { margin-top: 10px; }
+	.question { margin-bottom: 10px; }
+	.answered { margin-top: 10px; }
 		
 	/* post metadata */
-		#post-info { margin-top: 15px; }
-		.all-notes { margin-top: 10px; }
-		ol.notes { margin-left: 1em; padding-left: 1em; }
+	#post-info { margin-top: 15px; }
+	.all-notes { margin-top: 10px; }
+	ol.notes { margin-left: 1em; padding-left: 1em; }
 
 	/* navigation */
-		.navigation { padding-bottom: 25px; }
-		.alignright { float: right; }
-		.alignleft { float: left; }
+	.navigation { padding-bottom: 25px; }
+	.alignright { float: right; }
+	.alignleft { float: left; }
 
 	/* footer */
-		#footer { text-align: center; margin-top: 25px; font-size: .82em; }
+	#footer { text-align: center; margin-top: 25px; font-size: .82em; }
 
 	/*custom css */
-		{CustomCSS}
-		
-	</style>
-    </head>
-
-      <body>
+	{CustomCSS}	
+	</style>  
+	</head>
+	
+	<body>
     	<div id="container">
-    	
+
     	<div id="top">
 
         <a href="/"><img src={image:Header Image}></a>
 
-		{block:IfShowTitle}<h1><a href="/">{Title}</a></h1>
-		{/block:IfShowTitle}
-		<p><em>{Description}</em></p>
+	{block:IfShowTitle}<h1><a href="/">{Title}</a></h1>
+	{/block:IfShowTitle}
+	<p><em>{Description}</em></p>
 		
-		<div class="links">
+	<div class="links">
         {block:HasPages}
         {block:Pages}<a href="{URL}">{Label}</a>{/block:Pages}
         {/block:HasPages}
                 
         <div class="arch-rss-links">
 				
-		{block:HasPages}
-		{block:Pages}<a href="{URL}">{Label}</a>
-		{block:IfShowCommas},{/block:IfShowCommas} {/block:Pages}
-	    {/block:HasPages}
+	{block:HasPages}
+	{block:Pages}<a href="{URL}">{Label}</a>
+	{block:IfShowCommas},{/block:IfShowCommas} {/block:Pages}
+	 {/block:HasPages}
 				
-		{block:AskEnabled}
-		<a href="/ask">{AskLabel}</a>{block:IfShowCommas},{/block:IfShowCommas} 
-		{/block:AskEnabled}
+	{block:AskEnabled}
+	<a href="/ask">{AskLabel}</a>{block:IfShowCommas},{/block:IfShowCommas} 
+	{/block:AskEnabled}
 					
-	    {block:SubmissionsEnabled}
-		<a href="/submit">{SubmitLabel}</a>{block:IfShowCommas},{/block:IfShowCommas} 
-		{/block:SubmissionsEnabled}
+	{block:SubmissionsEnabled}
+	<a href="/submit">{SubmitLabel}</a>{block:IfShowCommas},{/block:IfShowCommas} 
+	{/block:SubmissionsEnabled}
 
         {block:IfShowArchiveLink}<a href="/archive">archive</a>{/block:IfShowArchiveLink}
         </div>
@@ -241,75 +229,74 @@
         <br />
         </div>
 	
-		<div id="content">
-		{block:Posts}
-		<div class="post">
+	<div id="content">
+	{block:Posts}
+	<div class="post">
 	   	
-	   	{block:Text}
-		<div class="text-post">
-		<h3>{Title}</h3>
-		{Body} </div>
-		{/block:Text}
+   	{block:Text}
+	<div class="text-post">
+	<h3>{Title}</h3>
+	{Body} </div>
+	{/block:Text}
 					
-		{block:Photo}
-		<div class="photo-post">
-		{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
-		{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}</div>
-		{/block:Photo}
+	{block:Photo}
+	<div class="photo-post">
+	{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}
+	{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}</div>
+	{/block:Photo}
 					
-		{block:Photoset}
-		<div class="photo-post">
-		{Photoset-500}
-		{block:Caption}<div class="caption">{Caption}</div>
-		{/block:Caption} </div>
-		{/block:Photoset}
+	{block:Photoset}
+	<div class="photo-post">
+	{Photoset-500}
+	{block:Caption}<div class="caption">{Caption}</div>
+	{/block:Caption} </div>
+	{/block:Photoset}			
 					
-					
-	    {block:Quote}
-		<div class="quote-post">
-		<q class="{Length}">{Quote}</q>
-		{block:Source}<div class="source">&mdash;{Source}</div>
-		{/block:Source}	</div>
-		{/block:Quote}
+	{block:Quote}
+	<div class="quote-post">
+	<q class="{Length}">{Quote}</q>
+	{block:Source}<div class="source">&mdash;{Source}</div>
+	{/block:Source}	</div>
+	{/block:Quote}
 		
-		{block:Link}
-		<div class="link-post">
-		<h3><a href="{URL}" {Target}>{Name}</a></h3>
-		{block:Description}<div class="caption">{Description}</div>
-		{/block:Description}</div>
-		{/block:Link}
+	{block:Link}
+	<div class="link-post">
+	<h3><a href="{URL}" {Target}>{Name}</a></h3>
+	{block:Description}<div class="caption">{Description}</div>
+	{/block:Description}</div>
+	{/block:Link}
 		
-		{block:Chat}
-		<div class="chat-post">
-		{block:Title}
-		<h3><a href="{Permalink}">{Title}</a></h3>
-		{/block:Title}
-		<ul class="chat">
-		{block:Lines}
-		<li class="{Alt}">
-		<span class="user_{UserNumber}">
-		{block:Label} <span class="label">{Label}</span>
-	    {/block:Label} </span>
-		{Line}
-		</li>
-		{/block:Lines}
-		</ul>
-		</div>			
-		{/block:Chat}
+	{block:Chat}
+	<div class="chat-post">
+	{block:Title}
+	<h3><a href="{Permalink}">{Title}</a></h3>
+	{/block:Title}
+	<ul class="chat">
+	{block:Lines}
+	<li class="{Alt}">
+	<span class="user_{UserNumber}">
+	{block:Label} <span class="label">{Label}</span>
+	{/block:Label} </span>
+	{Line}
+	</li>
+	{/block:Lines}
+	</ul>
+	</div>			
+	{/block:Chat}
 		
-		{block:Audio}
-		<div class="audio-post">
-		{AudioPlayerBlack}
-		{block:Caption}<div class="caption">{Caption} ({PlayCountWithLabel})</div>{/block:Caption}
-		</div>
-		{/block:Audio}
+	{block:Audio}
+	<div class="audio-post">
+	{AudioPlayerBlack}
+	{block:Caption}<div class="caption">{Caption} ({PlayCountWithLabel})</div>{/block:Caption}
+	</div>
+	{/block:Audio}
 		
-		{block:Video}
-		<div class="video-post">
-		{Video-500}
-		{block:Caption}<div class="caption">{Caption}</div>
-		{/block:Caption}</div>
-		{/block:Video}
+	{block:Video}
+	<div class="video-post">
+	{Video-500}
+	{block:Caption}<div class="caption">{Caption}</div>
+	{/block:Caption}</div>
+	{/block:Video}
 		
         {block:Answer}
         <div class="answer-post">
@@ -360,9 +347,8 @@
         </div>
         {/block:PermalinkPage}
     	</div>
-		{/block:Posts}
-    
-		</div>
+	{/block:Posts}
+    	</div>
 
         {block:Pagination}
         <div class="navigation">
@@ -376,14 +362,12 @@
         </div>
         {/block:Pagination}
 
-
-		<div id="footer">
-			Tumbling from {CopyrightYears}.<br/>
-			Pudding (Plain Times Edit) by <a href="negg.tumblr.com">negg</a>.
-		</div>
+	<div id="footer">
+	Tumbling from {CopyrightYears}.<br/>
+	Pudding (Plain Times Edit) by <a href="negg.tumblr.com">negg</a>.
+	</div>
 
 	</div>
 
-
-</body>
-</html>
+	</body>
+	</html>
