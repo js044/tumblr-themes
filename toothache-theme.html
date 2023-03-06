@@ -1,0 +1,357 @@
+<!-- toothache: a theme edit by negg.tumblr.com -->
+
+<!DOCTYPE html>
+<head>
+
+<meta charset="utf-8">
+<meta https-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+{block:Description}
+<meta name="description" content="{MetaDescription}" />
+{/block:Description}
+
+    
+<title>{Title}</title>
+        
+<link rel="shortcut icon" href="{image:favicon}">
+<link rel="alternate" type="application/rss+xml" href="{RSS}">
+<link rel="stylesheet" href="https://static.tumblr.com/qxrkgx6/RWPmgn2qa/normalize.min.css">
+
+<script src="https://static.tumblr.com/qxrkgx6/LuRmgn2rm/modernizr-2.6.2.min.js"></script>
+
+<meta name="image:sidebar img" content=""/>
+<meta name="image:bg" content=""/>
+<meta name="image:permalink" content=""/>
+<meta name="image:favicon" content="">
+
+<meta name="color:bg" content="#fff"/>
+<meta name="color:text color" content=""/>
+<meta name="color:link color" content=""/>
+<meta name="color:link border" content=""/>
+<meta name="color:link hover" content=""/>
+<meta name="color:post bg" content=""/>
+
+<meta name="text:font size" content="13" />
+
+<meta name="if:show title" content="" />
+<meta name="if:circle sidebar img" content="" />
+<meta name="if:show description" content="" />
+<meta name="if:full bg" content="" />
+<meta name="if:post bg" content="" />
+
+<meta name="text:link divider" content="🌟"/>
+
+<meta name="text:link 1" content=""/>
+<meta name="text:link 1 URL" content="" />
+<meta name="text:link 2" content=""/>
+<meta name="text:link 2 URL" content="" />
+
+<style type="text/css">
+
+body {
+color:{color:text color};
+background-color:{color:bg};
+background-image:url('{image:bg}');
+{block:iffullbg}background-size:100%; background-attachment: fixed;{/block:iffullbg}
+font-size:{text:font size}px;
+line-height:16px;
+text-align:justify
+}
+
+p{
+margin:0 0 10px 0;
+padding:0;
+}
+
+pre { 
+white-space: pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -pre-wrap;
+white-space: -o-pre-wrap;
+word-wrap: break-word;
+}
+
+a{
+color:{color:link color};
+text-shadow: -1px 0  {color:link border}, 0 1px  {color:link border}, 1px 0  {color:link border}, 0 -1px  {color:link border};
+text-decoration:none;
+letter-spacing:1px;
+font-size:{text:font size};
+}
+
+a:hover{
+color:{color:link hover};
+}
+
+li{
+margin-left:-15px;
+}
+
+/*
+containers etc
+*/
+#wrapper{
+width:600px;
+margin:50px auto;
+height:100%;
+}
+
+
+#sidebar{
+width:180px;
+position:fixed;
+margin-top:20px;
+margin-left:-90px;
+padding:25px;
+text-align:center;
+}
+
+#sidebar img{
+width:100%;
+max-width:100%;
+{block:ifcirclesidebarimg}border-radius:100px;{/block:ifcirclesidebarimg}
+margin-left:-10px;
+}
+
+#links {
+margin-top:10px;
+font-size:{text:font size};
+width:100%;
+text-align:center;
+}
+
+#credit{position:fixed; bottom:10px; left:10px; font-family:{select:font};}
+
+#content{
+width:500px;
+margin-left:200px;
+overflow:hidden;
+}
+
+
+.post{
+<font color:{color:text color};>text</font>
+width:400px;
+margin:0 50px 50px 0;
+text-align:justify;
+overflow:visible;
+padding:20px;
+border-radius:7px;
+{block:ifpostbg}background:{color:post bg};{/block:ifpostbg}
+
+
+}
+
+#sidebar img, .post img{
+max-width:100%;
+}
+
+
+#nav{
+margin:50px 0 0 0;
+}
+
+#footer{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* 
+content in the body of the posts - quotes, asks, etc
+"media" contains photos, photosets, videos, audio posts
+*/
+
+.media{
+margin:0 0 10px 0;
+}
+
+#audio {
+width:100%;
+height:50px;
+margin-bottom:10px;
+display:block;
+padding:5px;
+}
+
+#ask_form{ height: 255px!important;}
+
+ 
+#audio .player{background:#FFF;height:25px;width:25px;padding:2px;overflow:hidden;position:absolute;margin-top:8px;margin-left:8px;border:2px solid #fff;opacity:0.8;z-index:2;}
+ 
+ 
+.art{width:55px;height:55px; position:absolute;display:block;z-index:1;}
+.art img{width:50px;height:50px;}
+ 
+.songtitle{margin-left:60px;height:40px;padding:5px 10px;line-height:13px;overflow:auto;font-size:{text:font size}px;}
+
+.title{
+font-weight:normal;
+font-size:18px;
+margin:0 0 10px 0;
+}
+
+.quote{
+font-weight:normal;
+font-size:16px;
+font-style:italic;
+margin:0 0 10px 0;
+}
+
+.question{
+margin-bottom:10px;
+}
+
+blockquote{
+margin:0 0 10px 10px; 
+padding:0 0 0 10px;
+border-left:solid 1px #000;
+}
+
+/*
+post footers - date, tags, via and source
+*/
+.post .footer{
+margin:0;
+text-align:center;
+}
+
+/*
+post notes
+*/
+ol.notes{
+list-style-type:none;
+padding:0;
+margin:0;
+}
+
+ol.notes li.note img{
+width:16px;
+height:16px;
+}
+
+ol.notes li.note{
+margin:0px;
+}
+
+{CustomCSS}
+</style>
+</head>
+
+<body>
+<div id="wrapper">
+
+<div id="sidebar">
+{block:ifshowtitle}<div id="title"><div class="title"><a href="/"><h2>{Title}</h2></a></div></div>{block:ifshowtitle}
+<a href="/">
+<img src="{image:sidebar img}"></a>
+
+{block:ifshowdescription}<div id="description">{Description}</div> {/block:ifshowdescription}
+
+<div id="links">
+<a href="{text:link 1 url}" title="{text:link 1}">{text:link 1}</a> {text:link symbol} {text:link divider} <a href="{text:link 2 url}" title="{text:link 2}">{text:link 2} </a> 
+</div> </div>
+
+<div id="content">
+{block:Posts}
+<div class="post">
+
+{block:Text}
+{block:Title}
+<div class="title">{Title}</div>
+{/block:Title}
+{Body}
+{/block:Text}
+
+{block:Photo}
+<div class="media">{linkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{linkCloseTag}</div>
+{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+{/block:Photo}
+
+{block:Photoset}
+<div class="media">{Photoset-400}</div>
+{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+{/block:Photoset}
+
+{block:Quote}
+<div class="quote">"{Quote}"</div>
+{block:Source}
+<div class="quotesource">{Source}</div>
+{/block:Source}
+{/block:Quote}
+
+{block:link}
+<div class="title"><a href="{URL}">{Name}</a></div>
+{block:Description}
+<div class="description">{Description}</div>
+{/block:Description}
+{/block:link}
+
+{block:Chat}
+{block:Title}
+<div class="title">{Title}</div>
+{/block:Title}
+
+{block:Lines}
+<div class="{Alt} user_{UserNumber}">
+{block:Label}
+<b>{Label}</b>{/block:Label}
+&nbsp;{Line}
+</div>
+{/block:Lines}
+{/block:Chat}
+
+{block:Video}
+<div class="media">{Video-500}</div>
+{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+{/block:Video}
+
+{block:Audio}
+<div id="audio">
+<div class="art">{block:AlbumArt}<img src="{AlbumArtURL}">{/block:AlbumArt}</div>
+<div class="player">{AudioPlayerWhite}</div>
+<div class="songtitle">
+{block:TrackName}<i>{TrackName}</i>{/block:TrackName}<br>
+{block:Artist}{Artist}{/block:Artist}<br>
+{block:Album}{Album}{/block:Album}</div></div>
+{block:Caption}{Caption}{/block:Caption}
+{/block:Audio}
+                
+{block:Answer}{Asker} asked: {Question}<br> <br>{Answer}{/block:Answer}
+
+{block:Date}
+<div class="footer">
+<a href="{Permalink}">{block:NoteCount} {NoteCountWithLabel}{/block:NoteCount}</a>
+
+<img src="{image:permalink}"/>  <a href="{ReblogURL}" target="_blank" class="details">reblog</a>{block:HasTags}<br></text>{block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}{/block:HasTags}
+
+</div>
+
+{block:PermalinkPage}
+{block:NoteCount}
+{block:PostNotes}{PostNotes}{/block:PostNotes}
+{/block:NoteCount}
+{/block:PermalinkPage}
+{/block:Date}
+
+</div>
+{/block:Posts}
+  
+<div id="credit"><a href="http://negg.tumblr.com/" title="toothache theme">💔</a></div>
+ 
+{block:Pagination}
+<div id="nav">
+{block:PreviousPage}<a href="{PreviousPage}"> << </a>{/block:PreviousPage}
+{block:NextPage}<a href="{NextPage}"> >> </a>{/block:NextPage}
+</div>
+{/block:Pagination}
+</div>
+</div>
+</div>
+</div>
+
+script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://static.tumblr.com/qxrkgx6/q6kmgn2w2/jquery-1.8.3.min.js"><\/script>')</script>
+
+</body>
+</html>
