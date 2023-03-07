@@ -9,7 +9,6 @@ base code: https://animecharacter.tumblr.com/basecode -->
 {block:Description}
 <meta name="description" content="{MetaDescription}" />
 {/block:Description}
-
     
 <title>{Title}</title>
         
@@ -37,7 +36,6 @@ base code: https://animecharacter.tumblr.com/basecode -->
 <meta name="if:show title" content="" />
 <meta name="if:circle sidebar img" content="" />
 <meta name="if:show description" content="" />
-<meta name="if:full bg" content="" />
 <meta name="if:post bg" content="" />
 
 <meta name="text:link divider" content="🌟"/>
@@ -53,8 +51,7 @@ body {
 color:{color:text color};
 background-color:{color:bg};
 background-image:url('{image:bg}');
-{block:iffullbg}background-size:100%; background-attachment: fixed;{/block:iffullbg}
-font: {text:font size}px {Font:font}; 
+font: {text:font size}px {font:font}; 
 line-height:16px;
 text-align:justify
 }
@@ -97,7 +94,6 @@ margin:50px auto;
 height:100%;
 }
 
-
 #sidebar{
 width:180px;
 position:fixed;
@@ -112,6 +108,7 @@ width:100%;
 max-width:100%;
 {block:ifcirclesidebarimg}border-radius:100px;{/block:ifcirclesidebarimg}
 margin-left:-10px;
+margin-bottom:10px;
 }
 
 #links {
@@ -121,7 +118,12 @@ width:100%;
 text-align:center;
 }
 
-#credit{position:fixed; bottom:10px; left:10px; font-family:{select:font};}
+#credit{
+position:fixed; 
+bottom:10px;
+left:10px; 
+font-family:{select:font};
+}
 
 #content{
 width:500px;
@@ -129,9 +131,8 @@ margin-left:200px;
 overflow:hidden;
 }
 
-
 .post{
-<font color:{color:text color};>text</font>
+font:{color:text color};
 width:400px;
 margin:0 50px 50px 0;
 text-align:justify;
@@ -139,25 +140,21 @@ overflow:visible;
 padding:20px;
 border-radius:7px;
 {block:ifpostbg}background:{color:post bg};{/block:ifpostbg}
-
-
 }
 
 #sidebar img, .post img{
 max-width:100%;
 }
 
-
 #nav{
 margin:50px 0 0 0;
 }
 
 #footer{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
 }
-
 
 /* 
 content in the body of the posts - quotes, asks, etc
@@ -178,9 +175,7 @@ padding:5px;
 
 #ask_form{ height: 255px!important;}
 
- 
 #audio .player{background:#FFF;height:25px;width:25px;padding:2px;overflow:hidden;position:absolute;margin-top:8px;margin-left:8px;border:2px solid #fff;opacity:0.8;z-index:2;}
- 
  
 .art{width:55px;height:55px; position:absolute;display:block;z-index:1;}
 .art img{width:50px;height:50px;}
@@ -304,7 +299,7 @@ margin:0px;
 {/block:Chat}
 
 {block:Video}
-<div class="media">{Video-500}</div>
+<div class="media">{Video-400}</div>
 {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
 {/block:Video}
 
@@ -323,9 +318,8 @@ margin:0px;
 
 {block:Date}
 <div class="footer">
-<a href="{Permalink}">{block:NoteCount} {NoteCountWithLabel}{/block:NoteCount}</a>
-
-<img src="{image:permalink}"/>  <a href="{ReblogURL}" target="_blank" class="details">reblog</a>{block:HasTags}<br></text>{block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}{/block:HasTags}
+<a href="{Permalink}">{block:NoteCount} {NoteCountWithLabel}{/block:NoteCount}</a>&nbsp; 
+<img src="{image:permalink}"/>&nbsp;  <a href="{ReblogURL}" target="_blank" class="details">reblog</a>{block:HasTags}<br></text>{block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}{/block:HasTags}
 
 </div>
 
@@ -338,9 +332,9 @@ margin:0px;
 
 </div>
 {/block:Posts}
-  
+
 <div id="credit"><a href="http://negg.tumblr.com/" title="toothache theme">🦷</a></div>
- 
+
 {block:Pagination}
 <div id="nav">
 {block:PreviousPage}<a href="{PreviousPage}"> << </a>{/block:PreviousPage}
@@ -352,7 +346,7 @@ margin:0px;
 </div>
 </div>
 
-script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="https://static.tumblr.com/qxrkgx6/q6kmgn2w2/jquery-1.8.3.min.js"><\/script>')</script>
 
 </body>
